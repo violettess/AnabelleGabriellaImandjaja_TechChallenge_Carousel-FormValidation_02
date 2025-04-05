@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> <!-- link CSS -->
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo header__logo--aiesec">
+            <img src="asset/logo-aiesec.png" alt="Logo AIESEC">
+        </div>
+        <div class="header__logo header__logo--gv">
+            <img src="asset/logo-GV.png" alt="Logo Global Volunteer">
+        </div>
+        <h1 class="header__title">Registration Form</h1>
+    </header>
+
+    <!-- Use for so that when user clicks the label, autofocus the cursor -->
+
+    <form class="form" action="">
+        <!-- Name -->
+        <div class="form__group">
+            <label class="form__label" for="name">Full name</label> 
+            <input class="form__input" type="text" id="name" name="name">
+            <span class="form__error" id="form__error--name"></span>
+        </div>
+    
+        <!-- Email -->
+        <div class="form__group">
+            <label class="form__label" for="email">Email address</label>
+            <input class="form__input" type="email" id="email" name="email">
+            <span class="form__error" id="form__error--email"></span>
+        </div>
+    
+        <!-- Gender -->
+        <div class="form__group">
+            <label class="form__label">Gender</label>
+            <div class="form__radio-group">
+                <div class="form__radio-option">
+                    <input class="form__radio-input" type="radio" id="male" name="gender" value="male">
+                    <label class="form__label-radio" for="male">Male</label>
+                </div>
+                <div class="form__radio-option">
+                    <input class="form__radio-input" type="radio" id="female" name="gender" value="female">
+                    <label class="form__label-radio" for="female">Female</label>
+                </div>
+            </div>
+            <span class="form__error" id="form__error--gender"></span>
+        </div>
+    
+        <!-- Destination country -->
+        <div class="form__group">
+            <label class="form__label" for="destination">Destination country:</label>
+            <select class="form__select" id="destination" name="destination">
+                <option value="" disabled selected>Select a destination</option> <!-- Placeholder -->
+                <option class="form__option" value="vietnam">Vietnam</option>
+                <option class="form__option" value="korea">Korea</option>
+                <option class="form__option" value="egypt">Egypt</option>
+                <option class="form__option" value="tunisia">Tunisia</option>
+                <option class="form__option" value="thailand">Thailand</option>
+                <option class="form__option" value="spain">Spain</option>
+                <option class="form__option" value="poland">Poland</option>
+                <option class="form__option" value="czech_republic">Czech Republic</option>
+                <option class="form__option" value="others">Others</option>                
+            </select>
+            <span class="form__error" id="form__error--destination"></span>
+        </div>
+    
+        <!-- Submit button -->
+        <div class="form__group">
+            <button class="form__button" type="submit">Submit</button>
+        </div>
+    </form>
+
+    <footer class="footer">
+        <p class="footer__subtext">embark on your leadership adventure</p>
+        <p class="footer__main">with AIESEC.</p>
+    </footer>
+
+    <!-- Custom success pop-up -->
+    <div class="popup" id="popup__success">
+        <div class="popup__content">
+            <p>Successfully submitted!</p>
+            <button id="popup__close">Close</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script> <!-- link JavaScript -->
+    
+</body>
+</html>

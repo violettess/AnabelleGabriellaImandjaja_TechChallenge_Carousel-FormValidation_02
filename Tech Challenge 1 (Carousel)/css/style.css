@@ -1,0 +1,212 @@
+/* Import Lato font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F85A40; /* AIESEC GV official color */
+    color: #ffffff; /* White text for better contrast */
+    font-family: Lato, sans-serif; /* AIESEC official font */
+
+    /* Layout the whole page */
+    margin: 0;
+    min-height: 100vh;
+    overflow: auto;
+    padding: 20px;
+
+    /* Centers the layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* === HEADER LOGO === */
+.header__logo--gv {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.header__logo--gv img {
+    width: 50vw;
+    min-width: 100px;
+    max-width: 250px;
+}
+
+
+/* === CAROUSEL === */
+.carousel {
+    max-width: 600px;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.carousel__wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+}
+
+/* Inactive slides */
+.carousel__slide {
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transition: opacity 0.5s ease; /* Fade effect */
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 1.5rem;
+}
+
+/* Active slides */
+.carousel__slide--active {
+    opacity: 1;
+    position: relative;
+    z-index: 2; /* Active slide on top */
+}
+
+.carousel__card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Image section */
+.carousel__image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Text section */
+.carousel__opportunity {
+    padding: 20px 0;
+}
+
+.carousel__opportunity-title {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.carousel__opportunity-host {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.carousel__opportunity-desc {
+    color: #777;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+
+/* === PREV NEXT BUTTONS === */
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    /* Button size and appearance */
+    width: 32px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: #333;
+    z-index: 10;
+    cursor: pointer;
+    
+    /* Center content inside button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel__button:hover {
+    background-color: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.carousel__button--prev {
+    left: 0;
+}
+
+.carousel__button--next {
+    right: 0;
+}
+
+
+/* === DOTS === */
+.carousel__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.carousel__dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel__dot--active {
+    background-color: #F85A40;
+    border: 2px solid #ffffff;
+    transform: translateY(-2px); /* Move active dot a bit upwards */
+}
+
+
+/* === SUMMER HUB LINK === */
+.summerhub {
+    margin: 2rem;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.summerhub__link {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.summerhub__link:hover {
+    color: #d5d5d5;
+}
+
+/* === FOOTER === */
+.footer {
+    text-align: center;
+}
+
+.footer__main {
+    font-weight: bold;
+    margin-top: 4px;
+}

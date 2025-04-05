@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- link CSS -->
+</head>
+
+<body>
+
+    <header>
+        <div class="header__logo header__logo--gv">
+            <img src="asset/logo-GV.png" alt="Logo Global Volunteer">
+        </div>
+    </header>
+    <div class="carousel">
+        <button class="carousel__button carousel__button--prev">&#10094;</button> <!-- Prev button -->
+        <div class="carousel__wrapper">
+            <div class="carousel__slide carousel__slide--active"> <!-- Set Korea (1st slide) as active slide -->
+                <div class="carousel__card">  <!-- Wrapper inside slide -->
+                    <img class="carousel__image" src="asset/korea.jpeg" alt="korea">
+                    <div class="carousel__opportunity">
+                        <h3 class="carousel__opportunity-title">Over HER Tears</h3>
+                        <p class="carousel__opportunity-host">AIESEC in EWHA, Korea</p>
+                        <p class="carousel__opportunity-desc">Global Volunteers will be responsible for creating and delivering workshops and activities aiming to engage people towards gender equality. They will also deliver activities to raise awareness on gender discrimination and how to fight it.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__slide">
+                <div class="carousel__card">
+                    <img class="carousel__image" src="asset/czech.jpg" alt="czech">
+                    <div class="carousel__opportunity">
+                        <h3 class="carousel__opportunity-title">Happy Bus</h3>
+                        <p class="carousel__opportunity-host">AIESEC in Olomouc, Czech Republic</p>
+                        <p class="carousel__opportunity-desc">Global Volunteers will be responsible for engaging small children in interactive activities, teaching English, promoting cultural diversity, and fostering a welcoming atmosphere, while traveling between villages multiple villages during the duration of the project.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__slide">
+                <div class="carousel__card">
+                    <img class="carousel__image" src="asset/vietnam.jpg" alt="vietnam">
+                    <div class="carousel__opportunity">
+                        <h3 class="carousel__opportunity-title">On The Map</h3>
+                        <p class="carousel__opportunity-host">AIESEC in NEU, Vietnam</p>
+                        <p class="carousel__opportunity-desc">Global Volunteers will be responsible for fostering workshops and educational spaces aimed to build the capacity of the community to promote tourism in their locality. They will also run field research on the cultural, historical and environmental value of the region.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__slide">
+                <div class="carousel__card">
+                    <img class="carousel__image" src="asset/egypt.jpeg" alt="egypt">
+                    <div class="carousel__opportunity">
+                        <h3 class="carousel__opportunity-title">Skill Up</h3>
+                        <p class="carousel__opportunity-host">AIESEC in TaNTa, Egypt</p>
+                        <p class="carousel__opportunity-desc">Global Volunteers will collaborate with formal and technical schools to create and conduct soft and hard skills trainings as well as providing career guidance for local youth and building up entrepreneurship skills to help them navigate the job market more effectively.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel__button carousel__button--next">&#10095;</button> <!-- Next button -->
+    </div>
+
+    <div class="carousel__dots">
+        <span class="carousel__dot carousel__dot--active"></span>
+        <span class="carousel__dot"></span>
+        <span class="carousel__dot"></span>
+        <span class="carousel__dot"></span>
+    </div>
+ 
+    <div class="summerhub"> <!-- Provide link -->
+        <p class="summerhub__cta">For more details, visit our 
+            <a href="https://docs.google.com/spreadsheets/d/1V5tZ6VOTsCdW8YHcHni61Y2ef_p0QYYALTbNTYk768k/edit?gid=2087426446#gid=2087426446" class="summerhub__link">Summer Hub</a>
+        </p>
+    </div>
+
+    <footer class="footer">
+        <p class="footer__subtext">embark on your leadership adventure</p>
+        <p class="footer__main">with AIESEC.</p>
+    </footer>
+    
+    <script src="js/script.js"></script> <!-- link JavaScript -->
+</body>
+</html>
